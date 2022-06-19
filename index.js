@@ -1,5 +1,6 @@
 const input1 = document.querySelector('.fill_in .txt')
 const input2 = document.querySelector('.fill_in .submit')
+const reset = document.querySelector('.fill_in .reset')
 const final_answer = document.querySelector('.fill_in .guess_number')
 
 var code = ' '
@@ -22,6 +23,12 @@ input2.addEventListener("click", function (e) {
             console.log(err)
         }
     }
+})
+
+reset.addEventListener("click", function(e) {
+    playeranswer=[];
+    gameRound=10;
+    final_answer.innerHTML = '<p></p>';
 })
 
 console.log(input1)
