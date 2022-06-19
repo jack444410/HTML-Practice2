@@ -110,7 +110,7 @@ function guessNumber() {
     }
 
     function checkLose() {
-        if (gameRound == 7) {
+        if (gameRound == 0) {
             code = 'lose'
             final_answer.innerHTML = `<p class="guess_number">遊戲結束。你已用盡次數，正確的答案為 ${randomnumber1} <p/><p class="guess_number">你已猜過了：${playeranswer}<p/>`
         }
