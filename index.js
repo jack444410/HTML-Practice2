@@ -2,6 +2,7 @@ const input1 = document.querySelector('.fill_in .txt')
 const input2 = document.querySelector('.fill_in .submit')
 const reset = document.querySelector('.fill_in .reset')
 const final_answer = document.querySelector('.fill_in .guess_number')
+const luckyMe = document.querySelector('.fill_in .lucky')
 
 var code = ' '
 
@@ -31,6 +32,11 @@ reset.addEventListener("click", function (e) {
     final_answer.innerHTML = '<p></p>';
 })
 
+luckyMe.addEventListener("click", function(e) {
+    luckyNumber = Math.floor(Math.random() *100);
+    guessNumber(luckyNumber);
+})
+
 console.log(input1)
 
 console.log(input1.value)
@@ -45,6 +51,8 @@ const P = [
     '比對中 . . .'
 ];
 let x = 0; 0
+
+let luckyNumber = Math.floor(Math.random() *100);
 
 let randomnumber1 = Math.floor(Math.random() * 100);
 console.log(randomnumber1)
@@ -64,7 +72,10 @@ function syncDelay(milliseconds) {
     }
 }
 
-function guessNumber() {
+function guessNumber(a) {
+    if(a != null){
+        input1.value = a
+    }
     value = Number(input1.value)
     console.log(typeof (value))
     console.log(gameRound)
