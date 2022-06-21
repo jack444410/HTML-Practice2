@@ -32,13 +32,13 @@ reset.addEventListener("click", function (e) {
     final_answer.innerHTML = '<p></p>';
 })
 
-luckyMe.addEventListener("click", function(e) {
-    if(code == 'running' || code == 'win' || code == 'lose'){
+luckyMe.addEventListener("click", function (e) {
+    if (code == 'running' || code == 'win' || code == 'lose') {
         console.log('detected clicked! but refused by system due to the code is running')
         return;
     } else {
-    luckyNumber = Math.floor(Math.random() *100);
-    guessNumber(luckyNumber);
+        luckyNumber = Math.floor(Math.random() * 100);
+        guessNumber(luckyNumber);
     }
 })
 
@@ -57,7 +57,7 @@ const P = [
 ];
 let x = 0; 0
 
-let luckyNumber = Math.floor(Math.random() *100);
+let luckyNumber = Math.floor(Math.random() * 100);
 
 let randomnumber1 = Math.floor(Math.random() * 100);
 console.log(randomnumber1)
@@ -78,7 +78,7 @@ function syncDelay(milliseconds) {
 }
 
 function guessNumber(a) {
-    if(a != null){
+    if (a != null) {
         input1.value = a
     }
     value = Number(input1.value)
