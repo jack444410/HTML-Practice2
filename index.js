@@ -30,6 +30,7 @@ reset.addEventListener("click", function (e) {
     playeranswer = [];
     gameRound = 10;
     final_answer.innerHTML = '<p></p>';
+    code = ''
 })
 
 luckyMe.addEventListener("click", function (e) {
