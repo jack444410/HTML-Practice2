@@ -5,3 +5,15 @@
     padding: 10px;
     font-family: 'Microsoft JhengHei';
 }
+
+.codeLink{
+    color: black;
+    font-family: Microsoft JhengHei;
+    font-size: 13px;
+}
+
+
+.codeLink .linkPart{
+    color: black;
+    font-size: 12px;
+}
